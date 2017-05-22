@@ -1,16 +1,17 @@
 var exports = module.exports = {};
 
 //use this prototype to create the other functions
-exports.kineticEnergy = function(m,v){};
-return m*v^2/2
-}:
+exports.kineticEnergy = function(m,v){
+  let ke = m*v*v/2;
+  return ke;
+};
 
-export.mass = function(ke,v){
-    return (ke*2)/(v^2)
-}:
+exports.mass = function(ke,v){
+  let mass = 2*ke/(v*v);
+  return mass;
+};
 
-export.velocity = function(ke,m){
-  return Math.sqrt((2*ke)/m)
-}:
-
-  
+exports.velocity = function(ke,m){
+  let velocity = Math.sqrt(2*ke/m);
+  return velocity;
+};
